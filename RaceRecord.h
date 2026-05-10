@@ -9,7 +9,7 @@ public:
     int m_RaceRank;
     Time m_RaceTime;
 
-    RaceRecord(std::string add_RaceName = "No Race Name" , int add_RaceRank , int add_RaceYear = 0 , int add_RaceMonth = 0 , int add_RaceDay = 0) : Time (add_RaceYear , add_RaceMonth , add_RaceDay)
+    RaceRecord(std::string add_RaceName = "No Race Name" , int add_RaceRank = 0 , int add_RaceYear = 0 , int add_RaceMonth = 0 , int add_RaceDay = 0) : Time (add_RaceYear , add_RaceMonth , add_RaceDay)
     {
         // 构造函数
     }

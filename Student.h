@@ -3,7 +3,6 @@
 #include<vector>
 #include "Person.h"
 #include "RaceRecord.h"
-#include "Trainer.h"
 class Trainer;
 class Student : public Person
 {

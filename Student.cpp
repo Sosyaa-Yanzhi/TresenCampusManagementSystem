@@ -1,8 +1,6 @@
-#pragma once
 #include<iostream>
 #include<vector>
 #include "Student.h"
-#include "Trainer.h"
 #include "PersonList.h"
 class Trainer;
 
@@ -68,7 +66,7 @@ void Student::ChangeTrainer()
             {
                 isTrainerInList = true;
                 m_Trainer = &TrainerList[i];
-                std::cout << "成功更新" << m_Name << "的训练员为：" << m_Trainer*.m_Name << "！" << std::endl;
+                std::cout << "成功更新" << m_Name << "的训练员为：" << m_Trainer->m_Name << "！" << std::endl;
                 break;
             }
         }
@@ -90,7 +88,7 @@ void Student::ShowInfo()
 {
     std::cout << "姓名：" << m_Name << std::endl;
     std::cout << "学生号：" << m_SchoolID << std::endl;
-    std::cout << "训练员：" << m_Trainer*.m_Name << std::endl;
+    std::cout << "训练员：" << m_Trainer->m_Name << std::endl;
     std::cout << "所属队伍：" << m_Team << std::endl;
     std::cout << "比赛记录：" << std::endl;
 }
